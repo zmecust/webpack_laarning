@@ -1,2 +1,2 @@
-# webpack_laarning
-A project of webpack laarning
+# webpack_learning
+A project of webpack learning

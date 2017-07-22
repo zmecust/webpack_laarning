@@ -1,2 +1,2 @@
-# webpack_learning
+# webpack-learning
 A project of webpack learning

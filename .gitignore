@@ -1,3 +1,15 @@
 node_modules/
+.DS_Store
+.idea/
+.DS_Store/
+development.json
+settings.json
+release.json
+.vscode/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
 dist/
-npm-debug.log

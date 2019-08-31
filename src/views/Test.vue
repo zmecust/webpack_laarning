@@ -1,11 +1,11 @@
 <template>
-  <div class="test">
+  <div class="upload">
     <Upload></Upload>
   </div>
 </template>
 
 <script>
-import Upload from '../components/Upload';
+import Upload from '../components/Export';
 
 export default {
   components: {
@@ -15,7 +15,8 @@ export default {
 </script>
 
 <style lang="scss">
-.test {
+.upload {
+  margin: 0 auto;
   color: red;
 }
 </style>

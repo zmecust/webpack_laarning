@@ -11,7 +11,7 @@
   "author": "Min Zhang",
   "license": "MIT",
   "dependencies": {
-    "element-ui": "^2.4.0",
+    "export-xlsx": "^0.1.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },

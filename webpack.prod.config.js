@@ -2,7 +2,6 @@ var webpack = require('webpack');
 var config = require('./webpack.base.config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var fs = require('fs');
 
 config.output.publicPath = '/dist/';
 config.output.filename = '[name].[hash].js';                 // 带hash值的入口js名称
@@ -29,11 +28,5 @@ config.plugins = (config.plugins || []).concat([
     inject: true
   })
 ]);
-
-// 写入环境变量
-fs.open('./config/env.js', 'w', function (err, fd) {
-  var buf = 'export default "production";';
-  fs.write(fd, buf, 0, buf.length, 0, function (err, written, buffer) { });
-});
 
 module.exports = config;

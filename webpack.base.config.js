@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader')
+
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }

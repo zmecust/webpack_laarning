@@ -44,7 +44,24 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        // use: {
+        //   loader: "babel-loader",
+        //   options: {
+        //     presets: [
+        //       [
+        //         '@babel/preset-env',
+        //         {
+        //           // useBuiltIns polyfill 设置 使用内建？
+        //           // 将 polyfill 应用于 @babel/preset-env 中的方法
+        //           'useBuiltIns': 'entry', //"usage" | "entry" | false, defaults to false.
+        //           // 'corejs': 3 // 使用 core-js 不能缺少的配置
+        //         }
+        //       ]
+        //     ],
+        //     plugins: ['@babel/plugin-transform-runtime']
+        //   }
+        // }
       },
       {
         test: /\.css$/,
